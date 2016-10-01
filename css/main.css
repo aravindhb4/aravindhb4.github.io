@@ -1,0 +1,241 @@
+* {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  width: 70%;
+}
+
+figure {
+	margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo {
+	width: 40%;
+	height: auto;
+	margin-top: 35px;
+}
+
+.logo-udacity {
+	max-width: 70px;
+	height: auto;
+	display: block;
+}
+
+.text {
+	width: 60%;
+	height: auto;
+	color: #2d3c49;
+	margin-top: 10px;
+	font-size: 150%;
+
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-thin {
+	font-weight: 200;
+}
+
+.hr {
+	height: 40px;
+	width: 100%;
+}
+
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 4px solid grey;
+}
+
+.main-image {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.featured {
+	color: #7d97ad;
+	margin: 30px 20px 15px 10px;
+	font-size: 160%;
+}
+
+.work {
+	width: 33.33%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	}
+
+.work-image1,.work-image2,.work-image3 {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.work-image1 {
+	padding: 0 10px 0 0;
+}
+
+.work-image2 {
+	padding: 0 5px 0 5px;
+}
+.work-image3 {
+	padding: 0 0 0 10px;
+}
+
+figcaption {
+	margin: 5px;
+	font-size: 90%;
+	color: #2d3c49;
+}
+
+a {
+	font-size: 90%;
+	margin: 10px 0 10px 0;
+}
+
+@media (max-width: 900px) and (min-width: 551px)  {
+
+	body {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.container {
+		display: block;
+		flex-wrap: wrap;
+	}
+
+	.text {
+		width: 100%;
+		font-size: 90%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.logo-udacity {
+		max-width: 40px;
+		height: auto;
+		display: block;
+	}
+
+	picture { 
+	margin-bottom: 20px;
+	 }
+
+	.hr {
+	height: 20px;
+	}
+
+	.text-right {
+		text-align: left;
+	}
+	
+	.work {
+		width: 50%;
+	}
+
+	.work-image1,.work-image2,.work-image3 {
+	padding: 15px;
+	}
+
+	.featured {
+		font-size: 110%;
+	}
+}
+
+@media (max-width: 550px) {
+
+	body {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.container {
+		display: block;
+		flex-wrap: wrap;
+	}
+
+	.row {
+		display: block;
+		flex-wrap: wrap;
+	}
+
+	.text {
+		width: 100%;
+		font-size: 70%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.logo-udacity {
+		max-width: 30px;
+		height: auto;
+		display: block;
+	}
+
+	picture { 
+	margin-bottom: 20px;
+	 }
+
+	.hr {
+	height: 20px;
+	}
+
+
+	img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.text-right {
+		text-align: center;
+	}
+	
+	.work {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.work-image1,.work-image2,.work-image3 {
+	padding: 10px;
+	}
+
+	.featured {
+		font-size: 110%;
+	}
+}
