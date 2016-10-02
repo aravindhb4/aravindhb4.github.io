@@ -1,3 +1,10 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -6,8 +13,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-
-
+/*Using Lato font*/
 body {
   font-family: 'Lato', sans-serif;
   margin: 0 auto;
@@ -18,6 +24,15 @@ figure {
 	margin: 0;
 }
 
+footer {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*flex container*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +82,6 @@ figure {
 	width: 100%;
 }
 
-
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -87,6 +101,7 @@ hr {
 	font-size: 160%;
 }
 
+/*featured work 3 in a row*/
 .work {
 	width: 33.33%;
 	height: auto;
@@ -95,21 +110,39 @@ hr {
 	text-align: center;
 	}
 
-.work-image1,.work-image2,.work-image3 {
+#work-image1,#work-image2,#work-image3 {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
 
-.work-image1 {
+#work-image1 {
 	padding: 0 10px 0 0;
 }
 
-.work-image2 {
+#work-image2 {
 	padding: 0 5px 0 5px;
 }
-.work-image3 {
+
+#work-image3 {
 	padding: 0 0 0 10px;
+}
+
+/*hover color for footer icons*/
+.zocial-dribbble:hover {
+	color: #EA4C89;
+}
+
+.zocial-github:hover {
+	color: #F03C2E;
+}
+
+.zocial-twitter:hover {
+	color: #11C1FF;
+}
+
+.zocial-linkedin:hover {
+	color:#007BB5;
 }
 
 figcaption {
@@ -120,9 +153,32 @@ figcaption {
 
 a {
 	font-size: 90%;
-	margin: 10px 0 10px 0;
 }
 
+/*space the footer icons equidistant from each other*/
+.social {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+.social a {
+	text-decoration: none;
+	color: grey;
+}
+
+.work-link {
+	text-decoration: none;
+	color: blue;
+}
+
+.work-link:hover {
+	text-decoration: underline;
+}
+
+/*add style for widths between 550px and 900px(iPad) using media queries*/
 @media (max-width: 900px) and (min-width: 551px)  {
 
 	body {
@@ -161,12 +217,14 @@ a {
 	.text-right {
 		text-align: left;
 	}
-	
+
+	/*increase the width from 33.33% to 50%*/
 	.work {
 		width: 50%;
 	}
 
-	.work-image1,.work-image2,.work-image3 {
+	/*add padding to make the featured work articles a bit smaller than the main image in smaller devices*/
+	#work-image1,#work-image2,#work-image3 {
 	padding: 15px;
 	}
 
@@ -175,6 +233,7 @@ a {
 	}
 }
 
+/*add style for less than 550px width(Nexus 5) using media queries*/
 @media (max-width: 550px) {
 
 	body {
@@ -215,23 +274,25 @@ a {
 	height: 20px;
 	}
 
-
+	/*center the logo*/
 	img {
 		margin-left: auto;
 		margin-right: auto;
 	}
 
+	/*center the title text*/
 	.text-right {
 		text-align: center;
 	}
 	
+	/*make works to display one by one in small screen*/
 	.work {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.work-image1,.work-image2,.work-image3 {
+	#work-image1,#work-image2,#work-image3 {
 	padding: 10px;
 	}
 

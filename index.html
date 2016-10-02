@@ -2,66 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- viewport for device view and testing -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
 </head>
 <body>
+<!-- Flexbox container -->
   <div class="container">
-	  <div class="row">
+  	<header class="row">
 	  	<div class="logo">
-	  	<picture>
-		  	<figure>
-		  				<img class="logo-udacity" src="img/logo-udacity.svg" alt="Udacity Logo">
-		  	</figure>
-	  	</picture>
+		  	<picture>
+			  	<figure>
+			  		<img class="logo-udacity" src="img/logo-udacity.svg" alt="Udacity Logo">
+			  	</figure>
+		  	</picture>
 	  	</div>
 	  	<div class="text text-uppercase text-right">
 	  		<h1 class="text-thin">Aravindh B</h1>
 	  		<h5>Front-End ninja</h5>
 	  	</div>
-	  </div>
-	  <div class="hr"><hr></div>
-	  <div class="row">
-	  	<picture>
-	  		<figure>
-	  				<img class="main-image" src="img/3_heroes_loadingscreen.png" alt="Main image">
-	  		</figure>
-	  	</picture>
-	  </div>
-	  <div class="row">
-	  	<h2 class="featured">Featured Work</h2>	
-	  </div>
-	  <div class="row">
-	  	<div class="work">
-	  	<picture>
-	  		<figure>
-	  				<img class="work-image1" src="img/3_heroes_loadingscreen.png" alt="Appify">
-				<figcaption>ANIMAL TRADING CARD</figcaption>
-	  		</figure>
-	  	<a href="https://github.com/aravindhb4/animal-trading-card">Link to the Project</a> 		
-		</picture>	 
-	  	</div>
-	  	<div class="work">
-	  	<picture>
-		  		<figure>
-		  				<img class="work-image2" src="img/3_heroes_loadingscreen.png" alt="Sunflower">
-		  			<figcaption>MOCKUP TO ARTICLE</figcaption>
-		  		</figure>	
-		<a href="https://github.com/aravindhb4/Mockup-to-Article">Link to the Project</a>	  		
-	  	</picture>
-	  	</div>
-	  	<div class="work">
-	  	<picture>
-		  		<figure>
-		  				<img class="work-image3" src="img/3_heroes_loadingscreen.png" alt="Bokeh">
+	</header>
+	<!-- The horizontal separator -->
+	<div class="hr"><hr></div>
+	<!-- Main image -->
+	<div class="row">
+		<picture>
+			<figure>
+				<img class="main-image" src="img/3_heroes_loadingscreen.png" alt="Main image">
+			</figure>
+		</picture>
+	</div>
+	<!-- Featured work heading -->
+	<div class="row">
+		<h2 class="featured">Featured Work</h2>	
+	</div>
+	<!-- 3 articles inside a row -->
+	<div class="row">
+		<article class="work">
+			<picture>
+				<figure>
+					<img id="work-image1" src="img/3_heroes_loadingscreen.png" alt="Animal Trading Card">
+					<figcaption>ANIMAL TRADING CARD</figcaption>
+				</figure>
+				<p><a class="work-link" href="https://github.com/aravindhb4/animal-trading-card">view it here!</a></p>	
+			</picture>	 
+		</article>
+		<article class="work">
+			<picture>
+				<figure>
+					<img id="work-image2" src="img/3_heroes_loadingscreen.png" alt="Mock up to Article">
+					<figcaption>MOCKUP TO ARTICLE</figcaption>
+				</figure>	
+			<p><a class="work-link" href="https://github.com/aravindhb4/Mockup-to-Article">view it here!</a></p>
+			</picture>
+		</article>
+		<article class="work">
+			<picture>
+				<figure>
+					<img id="work-image3" src="img/3_heroes_loadingscreen.png" alt="Recipes">
 					<figcaption>RECIPES</figcaption>	  				
-		  		</figure>
-		  <a href="https://github.com/aravindhb4/recipes">Link to the Project</a>			
-	  	</picture>		
-	  	</div>
-      </div>
+				</figure>
+			<p><a class="work-link" href="https://github.com/aravindhb4/recipes">view it here!</a></p>
+			</picture>		
+		</article>
+	</div>
+	<!-- footer with social icons for contact -->
+    <footer>
+		<ul class="social">
+			<a href="https://dribbble.com/aravindhb4" target="_blank">
+			  <li class="zocial-dribbble"></li>
+			</a>
+			<a href="https://github.com/aravindhb4" target="_blank">
+			  <li class="zocial-github"></li>
+			</a>
+			<a href="https://twitter.com/aravib4" target="_blank">
+			  <li class="zocial-twitter"></li>
+			</a>
+			<a href="https://www.linkedin.com/in/aravindhb4" target="_blank">
+			  <li class="zocial-linkedin"></li>
+			</a>
+		</ul>
+    </footer>  
   </div>
 </body> 
 </html>
