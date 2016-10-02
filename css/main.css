@@ -26,6 +26,7 @@ figure {
 
 footer {
 	width: 50%;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -284,7 +285,7 @@ a {
 	.text-right {
 		text-align: center;
 	}
-	
+
 	/*make works to display one by one in small screen*/
 	.work {
 		width: 80%;
